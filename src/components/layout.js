@@ -14,6 +14,7 @@ const Content = styled.div`
   flex: 1;
   overflow: scroll;
   padding: 20px;
+  color: #8e8e8e;
 `
 
 const Sidebar = styled.div`
@@ -21,7 +22,7 @@ const Sidebar = styled.div`
   flex-direction: column;
   width: 40%;
   background-color: #333;
-  color: white;
+  color: #ebebeb;
   justify-content: center;
   align-items: center;
 `
@@ -38,6 +39,7 @@ export default ({ children }) => (
     <Sidebar>
       <h1>Rationale Emotions</h1>
       <Logo src={LogoImage} />
+      <h5>Krishnan Mahadevan</h5>
     </Sidebar>
     <Content>{children}</Content>
   </Container>

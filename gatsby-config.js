@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Rationale Emotions'
+  },
   plugins: [
     'gatsby-plugin-styled-components',
     {
