@@ -11,7 +11,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "now-build": "npm run build"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.4",

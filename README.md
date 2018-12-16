@@ -1,12 +1,16 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+# Rationale Emotions Site page
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+### Initial Setup
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
+- Clone this repo
+- Run `npm install`
 
-## Running in development
-`gatsby develop`
+### Writing blog post
+
+- Write your blog post in markdown format under `src/blog-posts`. Refer the existing markdown template for title and date.
+- Then run `npx gatsby develop` to load the page in your local machine. Usually loads in [http://localhost:8000](http://localhost:8000)
+
+### To publish on Now.sh
+
+- Make sure you have `now` cli installed. Refer [here](https://zeit.co/now)
+- From your cli, just run `now` to publish.
