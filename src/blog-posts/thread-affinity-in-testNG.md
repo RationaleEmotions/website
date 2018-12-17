@@ -1,6 +1,7 @@
 ---
 title: 'Thread Affinity in TestNG'
 date: '2018-11-23'
+tags: ['Java', 'TestNG']
 ---
 
 Most of us would have at some point or the other built a Selenium based TestNG test that kind of looks like below:

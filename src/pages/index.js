@@ -1,35 +1,12 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
-import styled from 'styled-components'
+import { graphql } from 'gatsby'
 
-import { rhythm } from '../utils/typography'
 import Layout from '../components/layout'
-
-const PostTitle = styled.h3`
-  margin-bottom: ${rhythm(1 / 4)};
-`
-
-const PostDate = styled.span`
-  color: #8e8e8e;
-  font-size: 14px;
-`
-
-const PostLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`
+import Posts from '../components/posts'
 
 export default ({ data }) => (
   <Layout>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div key={node.id}>
-        <PostDate>{node.frontmatter.date}</PostDate>
-        <PostLink to={node.fields.slug}>
-          <PostTitle>{node.frontmatter.title} </PostTitle>
-        </PostLink>
-        <p>{node.excerpt}</p>
-      </div>
-    ))}
+    <Posts data={data.allMarkdownRemark.edges} />
   </Layout>
 )
 

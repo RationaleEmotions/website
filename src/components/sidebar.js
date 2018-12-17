@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { FaHome, FaUserSecret, FaLinkedin, FaGithub } from 'react-icons/fa'
+import {
+  FaHome,
+  FaUserSecret,
+  FaLinkedin,
+  FaGithub,
+  FaHashtag
+} from 'react-icons/fa'
 
 import LogoImage from '../images/logo.jpeg'
 
@@ -159,6 +165,11 @@ export default () => (
         <p>
           <StyledLink to="/">
             <FaUserSecret /> <span>About</span>
+          </StyledLink>
+        </p>
+        <p>
+          <StyledLink to="/tags">
+            <FaHashtag /> <span>Tags</span>
           </StyledLink>
         </p>
       </div>

@@ -1,6 +1,7 @@
 ---
 title: 'Executing Multiple Cucumber Scenarios in Parallel'
 date: '2018-01-28'
+tags: ['Cucumber', 'Java']
 ---
 
 To the best of my knowledge, so far there’s no support within cucumber-jvm so as to support concurrent executions of scenarios that are part of a particular feature file.
