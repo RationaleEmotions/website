@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import Sidebar from './sidebar'
@@ -18,8 +19,18 @@ const Content = styled.div`
 `
 
 export default ({ children }) => (
-  <Container>
-    <Sidebar />
-    <Content>{children}</Content>
-  </Container>
+  <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <meta
+        name="description"
+        content="Rationale Emotions - A blog by Krishnan Mahadevan"
+      />
+      <title>Rationale Emotions</title>
+    </Helmet>
+    <Container>
+      <Sidebar />
+      <Content>{children}</Content>
+    </Container>
+  </>
 )

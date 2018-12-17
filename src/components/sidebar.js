@@ -153,7 +153,7 @@ export default () => (
     <StyledLink to="/">
       <SiteTitle>Rationale Emotions</SiteTitle>
     </StyledLink>
-    <Logo src={LogoImage} />
+    <Logo src={LogoImage} alt="Krishnan Mahadevan" />
     <NameBoard>Krishnan Mahadevan</NameBoard>
     <MenuWrapper>
       <div>
@@ -177,13 +177,18 @@ export default () => (
         <p>
           <StyledHref
             href="https://www.linkedin.com/in/krmahadevan/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <FaLinkedin /> <span>Linkedin</span>
           </StyledHref>
         </p>
         <p>
-          <StyledHref href="https://github.com/krmahadevan" target="_blank">
+          <StyledHref
+            href="https://github.com/krmahadevan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub /> <span>Github</span>
           </StyledHref>
         </p>
