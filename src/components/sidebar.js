@@ -6,6 +6,42 @@ import { FaHome, FaUserSecret, FaLinkedin, FaGithub } from 'react-icons/fa'
 import LogoImage from '../images/logo.jpeg'
 
 const Sidebar = styled.div`
+  /* Device = Desktops */
+  /* @media (min-width: 1281px) {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* Device = Laptops, Desktops */
+  /* @media (min-width: 1025px) and (max-width: 1280px) {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* Device = Tablets, iPads (portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 20%;
+  }
+
+  /* Device = Tablets, iPads (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    width: 20%;
+  }
+
+  /* Device = Low resolution Tablets, Mobiles (landscape) */
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+
+    &::before {
+      content: '';
+      margin: 10px;
+    }
+  }
+
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -16,6 +52,24 @@ const Sidebar = styled.div`
 `
 
 const Logo = styled.img`
+  /* Device = Tablets, iPads (portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Device = Tablets, iPads (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Device = Low resolution Tablets, Mobiles (landscape) */
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 30px;
+    height: 30px;
+  }
+
   border-radius: 50%;
   overflow: hidden;
   width: 152px;
@@ -33,6 +87,16 @@ const StyledHref = styled.a`
 `
 
 const MenuWrapper = styled.div`
+  @media (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+    div {
+      margin: 0;
+    }
+    span {
+      display: none;
+    }
+  }
+
   display: flex;
   flex-direction: row;
   div {
@@ -40,23 +104,61 @@ const MenuWrapper = styled.div`
   }
 `
 
+const SiteTitle = styled.h1`
+  display: flex;
+
+  /* Device = Tablets, iPads (portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  /* Device = Tablets, iPads (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    font-size: 16px;
+  }
+
+  /* Device = Low resolution Tablets, Mobiles (landscape) */
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+`
+
+const NameBoard = styled.h5`
+  display: flex;
+
+  /* Device = Tablets, iPads (portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 12px;
+  }
+
+  /* Device = Tablets, iPads (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    font-size: 12px;
+  }
+
+  /* Device = Low resolution Tablets, Mobiles (landscape) */
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+`
+
 export default () => (
   <Sidebar>
     <StyledLink to="/">
-      <h1>Rationale Emotions</h1>
+      <SiteTitle>Rationale Emotions</SiteTitle>
     </StyledLink>
     <Logo src={LogoImage} />
-    <h5>Krishnan Mahadevan</h5>
+    <NameBoard>Krishnan Mahadevan</NameBoard>
     <MenuWrapper>
       <div>
         <p>
           <StyledLink to="/">
-            <FaHome /> Home
+            <FaHome /> <span>Home</span>
           </StyledLink>
         </p>
         <p>
           <StyledLink to="/">
-            <FaUserSecret /> About
+            <FaUserSecret /> <span>About</span>
           </StyledLink>
         </p>
       </div>
@@ -66,12 +168,12 @@ export default () => (
             href="https://www.linkedin.com/in/krmahadevan/"
             target="_blank"
           >
-            <FaLinkedin /> Linkedin
+            <FaLinkedin /> <span>Linkedin</span>
           </StyledHref>
         </p>
         <p>
           <StyledHref href="https://github.com/krmahadevan" target="_blank">
-            <FaGithub /> Github
+            <FaGithub /> <span>Github</span>
           </StyledHref>
         </p>
       </div>
