@@ -163,7 +163,7 @@ export default () => (
           </StyledLink>
         </p>
         <p>
-          <StyledLink to="/">
+          <StyledLink to="/about">
             <FaUserSecret /> <span>About</span>
           </StyledLink>
         </p>
