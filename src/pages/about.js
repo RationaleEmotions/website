@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 
 const StyledHref = styled.a`
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
   font-style: italic;
 `
