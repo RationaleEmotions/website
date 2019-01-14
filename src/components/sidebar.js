@@ -153,7 +153,9 @@ export default () => (
     <StyledLink to="/">
       <SiteTitle>Rationale Emotions</SiteTitle>
     </StyledLink>
-    <Logo src={LogoImage} alt="Krishnan Mahadevan" />
+    <Link to="/">
+      <Logo src={LogoImage} alt="Krishnan Mahadevan" />
+    </Link>
     <NameBoard>Krishnan Mahadevan</NameBoard>
     <MenuWrapper>
       <div>
