@@ -6,5 +6,7 @@
       "use": "@now/static-build",
       "config": { "distDir": "public" }
     }
-  ]
+  ],
+  "alias": "rationaleemotions.com",
+  "name": "rationaleemotions"
 }

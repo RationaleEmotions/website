@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "rationaleemotions",
+  "description": "Rationale Emotions",
   "license": "MIT",
   "author": "Vimalraj Selvam",
   "repository": {
     "type": "git",
-    "url": "https://github.com/email2vimalraj/rationaleemotions"
+    "url": "https://github.com/RationaleEmotions/website"
   },
   "scripts": {
     "develop": "gatsby develop",
