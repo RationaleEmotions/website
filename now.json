@@ -7,6 +7,9 @@
       "config": { "distDir": "public" }
     }
   ],
-  "alias": "rationaleemotions.com",
+  "alias": ["rationaleemotions.com"],
+  "github": {
+    "enabled": false
+  },
   "name": "rationaleemotions"
 }
