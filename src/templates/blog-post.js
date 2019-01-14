@@ -19,6 +19,17 @@ export default ({ data }) => {
         <span className="datetime">{post.frontmatter.date}</span>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p>
+          For any queries, log an issue{' '}
+          <a
+            href="https://github.com/RationaleEmotions/website/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
         <hr />
         <p>
           <StyledTag>Tags</StyledTag>: <PostTags tags={post.frontmatter.tags} />
