@@ -4,7 +4,7 @@ date: '2018-09-27'
 tags: ['TestNG']
 ---
 
-TestNG provides us users with two  ways in you can achieve data driven tests.
+TestNG provides us users with two ways in you can achieve data driven tests.
 
 1. You make use of the `@DataProvider` annotation wherein you bind your `@Test` method with a data source.
 2. You make use of the `@Parameters` annotation and have your `@Test` method read values from a suite xml file.
@@ -17,10 +17,10 @@ Lets say we have a test class which looks like below :
 
 ```java
 package com.rationaleemotions.wordpress.params;
- 
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
- 
+
 public class ParameterisedSampleTestClass {
     @Test
     @Parameters("name")
@@ -58,7 +58,7 @@ Well, today when I was fixing an issue in the TestNG codebase, I stumbled into t
 
 The easiest way of changing the values of parameters at runtime is to pass them via the JVM argument.
 
-*TestNG has the capability built into it wherein it also queries the System properties (JVM arguments) and tries to read the values of parameters whose name matches with what was given in the suite xml file.*
+_TestNG has the capability built into it wherein it also queries the System properties (JVM arguments) and tries to read the values of parameters whose name matches with what was given in the suite xml file._
 
 Here’s how you run it via Maven:
 
@@ -77,10 +77,4 @@ Just remember to add
 
 If you were to be running them via an IDE such as IntelliJ, your run configuration would look like below:
 
-![](../images/ide.jpeg)
-
-
-
-
-
-
+![](./images/ide.jpeg)
