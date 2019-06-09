@@ -32,17 +32,17 @@ Lets look at it’s implementation:
 package com.rationaleemotions.wordpress;
  
 import org.testng.IAlterSuiteListener;
-import <span class="skimlinks-unlinked">org.testng.xml.XmlPackage</span>;
-import <span class="skimlinks-unlinked">org.testng.xml.XmlSuite</span>;
-import <span class="skimlinks-unlinked">org.testng.xml.XmlTest</span>;
+import org.testng.xml.XmlPackage;
+import org.testng.xml.XmlSuite;
+import org.testng.xml.XmlTest;
  
-import <span class="skimlinks-unlinked">java.util.Collections</span>;
-import <span class="skimlinks-unlinked">java.util.List</span>;
+import java.util.Collections;
+import java.util.List;
  
 public class SimpleSuiteAlterer implements IAlterSuiteListener {
     @Override
     public void alter(List suites) {
-        XmlSuite suite = <span class="skimlinks-unlinked">suites.get(0</span>);
+        XmlSuite suite = suites.get(0);
         XmlTest xmlTest = new XmlTest(suite);
         xmlTest.setName("CommandLine_Test");
         String packages = System.getProperty("package", suite.getParameter("package"));
