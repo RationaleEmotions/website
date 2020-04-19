@@ -9,7 +9,7 @@
   ],
   "alias": ["rationaleemotions.com"],
   "github": {
-    "enabled": false
+    "enabled": true
   },
   "name": "rationaleemotions"
 }
